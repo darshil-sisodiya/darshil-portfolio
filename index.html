@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshil Sisodiya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Portfolio.</h2>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="left-content">
+            
+            <h1>HELLO all,<br> <span class="a">I AM DARSHIL SISODIYA</span></h1>
+
+            <h2>
+                <span id="typing-text"></span><span id="bio-text"></span>
+            </h2>
+            <p class="about-me">
+                Passionate about creating interactive and responsive websites with modern technologies.
+            </p>
+
+            <div class="buttons">
+                <a href="#" class="btn">Download CV</a>
+            </div>
+        </div>
+
+        <!-- Right-side artsy animation -->
+        <div class="art-container">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="floating-circler"></div>
+             
+            <div class="wavy-line"></div>
+            
+        </div>
+    </main>
+
+    <!-- About Me Section -->
+    <section id="about-page">
+        <div class="about-container">
+            <div class="about-left">
+                <h1>About Me</h1>
+                <p>
+                    I'm Darshil Sisodiya, a passionate Software Engineer, Web Developer, and Python Enthusiast.  
+                    I love crafting interactive and modern web applications with cutting-edge technologies.
+                </p>
+                <p>
+                    I enjoy solving complex problems, creating seamless user experiences, and exploring new technologies.
+                </p>
+                <div class="neon-border"></div>
+            </div>
+            <div class="about-right">
+                <div class="floating-hex"></div>
+                <div class="floating-circle"></div>
+                <canvas id="aboutCanvas"></canvas> 
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-left">
+                <h1>Skills</h1>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                    </div>
+                    <p>Experienced in crafting responsive and visually appealing web pages.</p>
+                </div>
+            
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%;"></div>
+                    </div>
+                    <p>Proficient in Python for software development, scripting, and automation.</p>
+                </div>
+            
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%;"></div>
+                    </div>
+                    <p>Skilled in adding interactivity and animations to web applications.</p>
+                </div>
+            
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Knowledgeable in database management and data querying.</p>
+                </div>
+            
+                <div class="skill">
+                    <span>Microsoft Excel</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 65%;"></div>
+                    </div>
+                    <p>Experienced in data analysis, formulas, and visualization tools.</p>
+                </div>
+            </div>
+    
+            <div class="skills-right">
+                <div class="skills-animation"></div>
+                <div class="skills-gradient"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-page">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <p>
+                I'm always open to new opportunities and collaborations! Feel free to reach out to me through the form or via the provided contact details.
+            </p>
+            <div class="contact-content">
+                <!-- Contact Form on the Left -->
+                <div class="contact-form-container">
+                    <form action="https://formspree.io/f/mzzeplrk" method="POST" class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+    
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Your Address" required>
+    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+    
+                <!-- Contact Info on the Right -->
+                <div class="contact-info-container">
+                    <div class="contact-info">
+                        <p><strong>Email: </strong>darshil.sisodiya@gmail.com</p>
+                        <p><strong>Phone: </strong>+91 6360826605</p>
+                        <p><strong>Address: </strong>Mahadevpura,560048,Bangalore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+        
+    
+    
+    
+    <style>
+    /* Skills Section */
+/* Skills Section */
+#skills {
+    width: 80%;
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    margin-left: 145px;
+}
+
+#skills h1 {
+    font-size: 2.5rem;
+    color: #64FFDA;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.skills-left {
+    width: 70%;
+}
+
+.skills-right {
+    width: 30%;
+    position: relative;
+    height: 100%;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #E6F1FF;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.skill-fill {
+    height: 100%;
+    background: #64FFDA;
+    transition: width 1.5s ease-in-out;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #A8B2D1;
+    margin-top: 5px;
+}
+
+/* Adding background animation and gradient on the right */
+.skills-animation {
+    position: absolute;
+    margin-top: 250px;
+    top: 30%;
+    margin-right: -450px;
+    right: 10%;
+    width: 180px;
+    height: 180px;
+    background: #64FFDA;
+    border-radius: 50%;
+    animation: bounceAnimation 2s infinite alternate ease-in-out;
+}
+
+.skills-gradient {
+    margin-top: 250px;
+    margin-right: -450px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(45deg, #64FFDA, #FFD700);
+    clip-path: circle(50%);
+    opacity: 0.2;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    #skills {
+        flex-direction: column;
+    }
+
+    .skills-left {
+        width: 100%;
+    }
+
+    .skills-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+
+    </style>
+    
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
