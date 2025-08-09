@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Skill Tag Hover Effects
+// Skill Tag Hover Effects with Enhanced Interactions
 document.addEventListener('DOMContentLoaded', function() {
     const skillTags = document.querySelectorAll('.skill-tag');
     
@@ -214,11 +214,50 @@ document.addEventListener('DOMContentLoaded', function() {
         tag.addEventListener('mouseenter', function() {
             this.style.background = 'rgba(255, 255, 255, 0.2)';
             this.style.transform = 'translateY(-3px) scale(1.05)';
+            
+            // Add floating effect
+            this.style.animation = 'skillFloat 0.6s ease-in-out';
         });
         
         tag.addEventListener('mouseleave', function() {
             this.style.background = 'rgba(255, 255, 255, 0.1)';
             this.style.transform = 'translateY(0) scale(1)';
+            this.style.animation = 'none';
+        });
+        
+        // Add click effect for skill tags
+        tag.addEventListener('click', function() {
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            }, 150);
+        });
+    });
+});
+
+// Philosophy Cards Enhanced Interactions
+document.addEventListener('DOMContentLoaded', function() {
+    const philosophyCards = document.querySelectorAll('.philosophy-card');
+    
+    philosophyCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            // Add subtle rotation on hover
+            this.style.transform = 'translateY(-10px) rotateY(2deg)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) rotateY(0deg)';
+        });
+        
+        // Add click effect
+        card.addEventListener('click', function() {
+            this.style.transform = 'translateY(-5px) scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = 'translateY(-10px) rotateY(2deg)';
+            }, 150);
         });
     });
 });
@@ -254,6 +293,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Animated Statistics Counter
+const animateStats = () => {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    statNumbers.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                stat.textContent = Math.floor(current);
+                requestAnimationFrame(updateCounter);
+            } else {
+                stat.textContent = target;
+            }
+        };
+        
+        updateCounter();
+    });
+};
+
 // Smooth reveal animation for sections
 const revealSections = () => {
     const sections = document.querySelectorAll('section');
@@ -265,6 +328,12 @@ const revealSections = () => {
         if (sectionTop < windowHeight * 0.75) {
             section.style.opacity = '1';
             section.style.transform = 'translateY(0)';
+            
+            // Trigger stats animation when about section is visible
+            if (section.id === 'about' && !section.classList.contains('stats-animated')) {
+                section.classList.add('stats-animated');
+                setTimeout(animateStats, 500);
+            }
         }
     });
 };
