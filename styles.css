@@ -16,6 +16,7 @@ body {
     background-color: #000000;
     overflow-x: hidden;
     cursor: none; /* Hide default cursor */
+    scroll-padding-top: 80px; /* Account for fixed navbar */
 }
 
 /* Custom Cursor with Glow Effect */
@@ -356,6 +357,7 @@ section {
     background: #0a0a0a;
     position: relative;
     overflow: hidden;
+    padding: 6rem 0;
 }
 
 .about::before {
@@ -372,43 +374,37 @@ section {
 
 .about-content {
     display: grid;
-    gap: 5rem;
+    gap: 4rem;
     position: relative;
     z-index: 2;
 }
 
-/* About Main Section */
-.about-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-.about-subtitle {
-    font-size: 2rem;
-    color: #ffffff;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    background: linear-gradient(45deg, #ffffff, #cccccc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/* About Intro */
+.about-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-description {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #cccccc;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.8;
-    text-align: justify;
+    text-align: center;
+}
+
+.about-description:last-child {
+    margin-bottom: 0;
 }
 
 /* Stats Section */
 .about-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .stat-item {
@@ -846,19 +842,8 @@ section {
         gap: 3rem;
     }
     
-    .about-main {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-    
     .about-stats {
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
-    
-    .philosophy-grid {
-        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     
@@ -898,6 +883,23 @@ section {
     }
     
     .card-content span {
+        font-size: 0.8rem;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
         font-size: 0.8rem;
     }
 }
