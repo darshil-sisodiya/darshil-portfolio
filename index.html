@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshil Sisodiya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DS</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Darshil Sisodiya</span>
+                </h1>
+                <p class="hero-subtitle">Crafting Digital Experiences with Code & Creativity</p>
+                <p class="hero-description">
+                    A passionate 3rd-year college student building sleek, responsive, and user-first interfaces. 
+                    Always experimenting, always learning — driven by curiosity and a love for turning ideas into polished web experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-code"></i>
+                        <span>Full-Stack Developer</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-palette"></i>
+                        <span>UI/UX Designer</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-rocket"></i>
+                        <span>Problem Solver</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm passionate about building sleek, responsive, and user-first interfaces. I work with HTML, CSS, JavaScript, React, and Tailwind CSS to craft clean UIs, and I'm comfortable on the backend with Flask and SQL when needed.
+                    </p>
+                    <p>
+                        I'm always experimenting, always learning — driven by curiosity and a love for turning ideas into polished web experiences. Let's create something impactful.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI & Cloud</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Google Cloud</span>
+                            <span class="skill-tag">Gemini AI</span>
+                            <span class="skill-tag">Ollama</span>
+                            <span class="skill-tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Eunoia -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://eunoiaa.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Eunoia - AI-Powered Mental Health Journal</h3>
+                        <p class="project-description">
+                            A thoughtfully designed mental wellness platform that empowers users to track their emotional well-being through daily journaling and supportive conversations with an AI therapist. It provides a non-judgmental space for users to express their feelings, reflect on their mental state, and receive gentle, empathetic guidance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Fast API</span>
+                            <span class="tech-tag">Ollama AI</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Recipe Finder -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://darshil-sisodiya.github.io/INTERACTIVERECIPEFINDER/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Recipe Finder</h3>
+                        <p class="project-description">
+                            Built a fully interactive recipe finder web app that lets users search recipes by ingredient using TheMealDB API and view detailed cooking instructions, ingredients, and estimated cook times. Integrated a favorites feature using localStorage, and added smooth UI animations and tab-based navigation for a better UX.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">TheMealDB API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Voice Assistant -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-status">In Progress</span>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Intelligent Voice Assistant for Customer Service</h3>
+                        <p class="project-description">
+                            An advanced multilingual voice assistant featuring custom Unicode script detection, real-time voice processing with Google Cloud Speech-to-Text, and AI-powered conversations using Google Gemini. Built with a modular microservices architecture supporting WebSocket integration for seamless bidirectional audio streaming.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Google Cloud</span>
+                            <span class="tech-tag">Gemini AI</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, creative projects, or just having a chat about technology and design.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="https://www.linkedin.com/in/darshil-sisodiya/" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">darshil-sisodiya</span>
+                            </div>
+                        </a>
+                        <a href="mailto:darshil.sisodiya@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">darshil.sisodiya@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/darshil-sisodiya/" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">darshil-sisodiya</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Darshil Sisodiya. Built with passion and creativity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
